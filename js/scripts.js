@@ -20,6 +20,11 @@ $(document).ready(function(){
 
     $("ul#tasks").append("<li><span class='task'>" + newToDo.task + "</span></li>");
 
+    $(".task").last().click(function() {
+      $("#show-task").show();
+      $("#show-task h2").text(newToDo.task);
+    })
+
 
   });
 });
