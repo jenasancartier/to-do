@@ -14,7 +14,7 @@ $(document).ready(function(){
     var inputtedTask = $("input#new-task").val();
     var inputtedLocation = $("input#new-location").val();
     var inputtedDetails = $("input#new-details").val();
-    var inputtedPriority = $("input#priority").val();
+    var inputtedPriority = $("select#priority").val();
 
     var newToDo = new ToDo(inputtedTask, inputtedLocation, inputtedDetails, inputtedPriority);
 
