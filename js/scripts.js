@@ -18,12 +18,16 @@ $(document).ready(function(){
 
     var newToDo = new ToDo(inputtedTask, inputtedLocation, inputtedDetails, inputtedPriority);
 
-    $("ul#tasks").append("<li><span class='task'>" + newToDo.task + "</span></li>");
+    $("ul#tasks").append("<li><span class='task'>" + newToDo.task + " " + '<input type="checkbox" name="done" id="checkbox" />' + "</span></li>");
 
     $(".task").last().click(function() {
       $("#show-task").show();
       $("#show-task h2").text(newToDo.task);
-    })
+      $(".task-name").text(newToDo.task);
+      $(".location-name").text(newToDo.location);
+      $(".detail-name").text(newToDo.details);
+      $(".priority-name").text(newToDo.priority);
+    });
 
 
   });
