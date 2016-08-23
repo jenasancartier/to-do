@@ -1,5 +1,10 @@
 body {
   font-family: 'Raleway', sans-serif;
+  background-image: url(../img/notebook.jpeg);
+}
+
+h1 {
+  text-align: center;
 }
 
 h2 {
@@ -11,9 +16,18 @@ label {
   font-size: 20px;
 }
 
+li {
+  font-size: 2em;
+}
+
 
 #show-task {
   display: none;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 55px;
+  max-width: 300px;
 }
 
 .task {
@@ -22,13 +36,16 @@ label {
 }
 
 .task:hover {
-  text-decoration: underline;
+  color: brown;
 }
 
 .container {
 margin: auto;
 }
 
-.btn {
-
+.myList {
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 15px;
 }
