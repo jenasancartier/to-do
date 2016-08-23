@@ -31,4 +31,10 @@ $(document).ready(function(){
 
 
   });
+
+$("#complete").click(function(){
+  var checkedCheckboxItem = $("input[name='done']:checked").parent();
+  checkedCheckboxItem.remove();
+});
+
 });
