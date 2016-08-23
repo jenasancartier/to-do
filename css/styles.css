@@ -2,6 +2,15 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+h2 {
+  font-size: 2em;
+  font-weight: bolder;
+}
+
+label {
+  font-size: 20px;
+}
+
 
 #show-task {
   display: none;
@@ -14,4 +23,12 @@ body {
 
 .task:hover {
   text-decoration: underline;
+}
+
+.container {
+margin: auto;
+}
+
+.btn {
+
 }
